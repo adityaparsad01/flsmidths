@@ -12,3 +12,11 @@
   margin: 10px;
   border-radius: 10px;
 }
+
+.name {
+  text-transform: capitalize;
+}
+
+.dayremain {
+  text-transform: capitalize;
+}

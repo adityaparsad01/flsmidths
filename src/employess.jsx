@@ -24,8 +24,10 @@ const Employee = () => {
       {emp.map((item, idx) => {
         return (
           <div key={idx}>
-            <h1>{item.Name}</h1>
-            <h2>{item.Day_Remaining}</h2>
+            <h1 className="name">{item.Name.toLowerCase()}</h1>
+            <h2 className="dayremain">
+              {item.Day_Remaining ? item.Day_Remaining : "not provided"}
+            </h2>
           </div>
         );
       })}
