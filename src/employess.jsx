@@ -28,7 +28,9 @@ const Employee = () => {
             <div className="vinfo">
               <h2>{item.Vehical_Number}</h2>
               <h2 className="dayremain">
-                {item.Day_Remaining ? item.Day_Remaining : "not provided"}
+                {item.Day_Remaining
+                  ? `${item.Day_Remaining} Days`
+                  : "not provided"}
               </h2>
             </div>
           </div>
