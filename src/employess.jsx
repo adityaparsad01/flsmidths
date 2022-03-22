@@ -6,7 +6,7 @@ const URL =
 
 const Employee = () => {
   const [emp, setEmp] = useState([]);
-  //console.log(emp);
+  console.log(emp);
 
   useEffect(() => {
     axios
@@ -25,6 +25,7 @@ const Employee = () => {
         return (
           <div className="card" key={idx}>
             <h1 className="name">{item.Name.toLowerCase()}</h1>
+            <h5>{item.H_Name}</h5>
             <div className="vinfo">
               <h2>{item.Vehical_Number}</h2>
               <h2 className="dayremain">
