@@ -23,11 +23,14 @@ const Employee = () => {
     <>
       {emp.map((item, idx) => {
         return (
-          <div key={idx}>
+          <div className="card" key={idx}>
             <h1 className="name">{item.Name.toLowerCase()}</h1>
-            <h2 className="dayremain">
-              {item.Day_Remaining ? item.Day_Remaining : "not provided"}
-            </h2>
+            <div className="vinfo">
+              <h2>{item.Vehical_Number}</h2>
+              <h2 className="dayremain">
+                {item.Day_Remaining ? item.Day_Remaining : "not provided"}
+              </h2>
+            </div>
           </div>
         );
       })}
