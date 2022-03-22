@@ -6,7 +6,7 @@ const URL =
 
 const Employee = () => {
   const [emp, setEmp] = useState([]);
-  console.log(emp);
+  //console.log(emp);
 
   useEffect(() => {
     axios
