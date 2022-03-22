@@ -1,6 +1,10 @@
 .App {
   font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  background-color: aqua;
 }
 .header {
   display: flex;
@@ -14,7 +18,7 @@
 }
 
 .card {
-  margin: 35px 0px 0px 20px;
+  margin: 20px 0px 0px 0px;
   text-align: center;
   overflow: hidden;
   backdrop-filter: blur(10px);
