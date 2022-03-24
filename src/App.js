@@ -10,12 +10,12 @@ export default function App() {
         <div className="bg bg2"></div>
         <div className="bg bg3"></div>
       </div>
-      <div className="App">
-        <div className="header">
+      <div className="header">
           <h1>Employees Vehicle Data</h1>
           <h2>{time.toDateString()}</h2>
         </div>
-        <Employee />
+      <div className="App">
+        <Employee className="emp"/>
       </div>
     </>
   );
