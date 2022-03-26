@@ -1,8 +1,15 @@
+import React, { useState } from "react";
 import "./styles.css";
 import Employee from "./employess";
+import Search from "./Search";
 
 export default function App() {
-  const setSearch = () => {};
+  const [search, setSearch] = useState("");
+
+  const inputval = (e) => {
+    setSearch(e.target.value);
+  };
+
   const time = new Date();
   return (
     <>
@@ -17,16 +24,11 @@ export default function App() {
           <h2>{time.toDateString()}</h2>
         </div>
         <div>
-          <input
-            className="search"
-            type="text"
-            placeholder="Search Employees"
-            onChange={(e) => setSearch(e.target.value)}
-          />
+          <Search inputval={inputval} />
         </div>
       </div>
       <div className="App">
-        <Employee className="emp" />
+        <Employee className="emp" search={search} />
       </div>
     </>
   );
