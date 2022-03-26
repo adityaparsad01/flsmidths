@@ -27,9 +27,10 @@ const Employee = ({ search }) => {
 
   useEffect(() => {
     setFilteritem(
-      emp.filter((item) =>
-        item.Name.toLowerCase().includes(search.toLowerCase())||
-        item.Vehical_Number.toLowerCase().includes(search.toLowerCase())
+      emp.filter(
+        (item) =>
+          item.Name.toLowerCase().includes(search.toLowerCase()) ||
+          item.Vehical_Number.toLowerCase().includes(search.toLowerCase())
       )
     );
   }, [search, emp]);
@@ -37,7 +38,7 @@ const Employee = ({ search }) => {
   if (loading) {
     return (
       <div className="center-div">
-        <img src="https://tenor.com/bkN6Z.gif" alt="" srcSet="" />
+        <h1>Loading...</h1>
       </div>
     );
   }
