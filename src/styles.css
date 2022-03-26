@@ -10,7 +10,7 @@ body {
   justify-content: center;
   text-align: center;
 }
-.header {
+.nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -21,6 +21,24 @@ body {
   position: fixed;
   z-index: 1;
   width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center-div {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
 }
 
 .card {
