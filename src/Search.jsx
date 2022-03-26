@@ -1,8 +1,6 @@
 import React from "react";
-import { GoSearch } from "react-icons/go";
 
-const Search = ({inputval}) => {
- 
+const Search = ({ inputval }) => {
   return (
     <div className="wrap">
       <div className="search">
@@ -12,9 +10,6 @@ const Search = ({inputval}) => {
           placeholder="What are you looking for?"
           onChange={inputval}
         />
-        <button type="submit" className="searchButton">
-          <GoSearch />
-        </button>
       </div>
     </div>
   );

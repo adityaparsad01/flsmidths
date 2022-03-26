@@ -18,9 +18,9 @@ export default function App() {
         <div className="bg bg2"></div>
         <div className="bg bg3"></div>
       </div>
-      <div className="naev">
+      <div className="nav">
         <div className="header">
-          <h1>Employees Vehicle Data</h1>
+          <h1>Vehicle Data</h1>
           <h2>{time.toDateString()}</h2>
         </div>
         <div>
