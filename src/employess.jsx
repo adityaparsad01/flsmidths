@@ -28,7 +28,8 @@ const Employee = ({ search }) => {
   useEffect(() => {
     setFilteritem(
       emp.filter((item) =>
-        item.Name.toLowerCase().includes(search.toLowerCase())
+        item.Name.toLowerCase().includes(search.toLowerCase())||
+        item.Vehical_Number.toLowerCase().includes(search.toLowerCase())
       )
     );
   }, [search, emp]);
