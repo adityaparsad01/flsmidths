@@ -16,7 +16,7 @@ export default function App() {
       <div className="main">
         <div className="nav">
           <div className="header">
-            <h1>Vehicle Data</h1>
+            <h2>Vehicle Data</h2>
             <h2>{time.toDateString()}</h2>
           </div>
           <div>
