@@ -10,14 +10,23 @@ const Employee = ({ search }) => {
   const [emp, setEmp] = useState([]);
   const [loading, setLoading] = useState(false);
   const [filteritem, setFilteritem] = useState([]);
-  console.log(filteritem);
+
+  function compare( a, b ) {
+  if ( a.Day_Remaining < b.Day_Remaining ){
+    return -1;
+  }
+  if ( a.Day_Remaining > b.Day_Remaining ){
+    return 1;
+  }
+  return 0;
+}
 
   useEffect(() => {
     setLoading(true);
     axios
       .get(URL)
       .then(function (response) {
-        setEmp(response.data[0].jsonArray);
+        setEmp(response.data[0].jsonArray.sort(compare));
         setLoading(false);
       })
       .catch(function (error) {
